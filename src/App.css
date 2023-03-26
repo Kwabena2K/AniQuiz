@@ -79,8 +79,8 @@ h1 {
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
-.final-results h2 {
-  color: red;
+.final-results h3 {
+  color: #f1822d;
 }
 
 button {
@@ -101,4 +101,26 @@ button:hover {
   cursor: pointer;
   transform: scale(1.2);
   transition: 0.2s;
+}
+
+input {
+  border-radius: 6px;
+  outline: none;
+}
+
+form {
+  margin-top: 2rem;
+}
+
+.userName,
+.submit {
+  /* border: 2px solid red; */
+  display: flex;
+  margin: 0 auto;
+  padding: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+.userName {
+  margin-bottom: 1rem;
 }
