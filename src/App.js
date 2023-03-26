@@ -11,7 +11,6 @@ function App() {
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState([]);
   // ScoreBoard component to display user scores
-  const [highScores, setHighScores] = useState([]);
 
   useEffect(() => {
     fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy")
