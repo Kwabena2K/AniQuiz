@@ -1,17 +1,15 @@
 import React, { useState, useEffect } from "react";
 import he from "he";
-import "./App.css";
 import QuestionsCard from "./components/QuestionsCard";
 import ResultsCard from "./components/ResultsCard";
+import "./App.css";
 
-function App() {
+function Quiz() {
   // Properties
   const [showResults, setShowResults] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState([]);
-  // ScoreBoard component to display user scores
-  const [highScores, setHighScores] = useState([]);
 
   useEffect(() => {
     fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy")
@@ -67,23 +65,18 @@ function App() {
   };
 
   return (
-    <div className="App">
-      {/* Page title  */}
-      <h1 className="title">Welcome to AniQuiz</h1>
-
-      {/*  Real time score */}
-      <h1 className="score">
+    <div className="Quiz">
+      <h1 className="Quiz-title">Welcome to AniQuiz</h1>
+      <h1 className="Quiz-score">
         Score: <span>{score}</span>
       </h1>
       {showResults ? (
-        /* Display results to user */
         <ResultsCard
           score={score}
           questions={questions}
           restartGame={restartGame}
         />
       ) : (
-        /* Question Card  */
         <QuestionsCard
           currentQuestion={currentQuestion}
           questions={questions}
@@ -94,4 +87,4 @@ function App() {
   );
 }
 
-export default App;
+export default Quiz;

@@ -71,12 +71,16 @@ h1 {
   height: auto;
   margin-top: 64px;
 
-  background-color: gray;
+  background-color: rgb(56, 54, 54);
   padding: 16px;
   border-radius: 16px;
   color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.final-results h2 {
+  color: red;
 }
 
 button {
@@ -89,6 +93,12 @@ button {
   text-decoration: none;
   display: inline-block;
   font-size: 1.2rem;
-  cursor: pointer;
+
   font-family: "DynaPuff", cursive;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: scale(1.2);
+  transition: 0.2s;
 }
