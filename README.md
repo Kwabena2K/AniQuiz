@@ -7,10 +7,11 @@ This project was created to combine Japanese Anime into a fun and interactive tr
 This application fetches an API from "Open Trivia DB" to supply the application with answers in regards to the questions provided. Some of the challenges I faced were randomizing the questions after the user restarts the game. I also found it challenging dealing with incorrect answers in the index.
 
 The technologies used in this project were:
--HTML
--React
--CSS
--Javascript
+
+HTML
+React
+CSS
+Javascript
 
 I used this tech stack as I found it necessary to complete the logic and functionality. In the future I would like to expand my learning to other technologies available.
 
