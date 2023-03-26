@@ -13,7 +13,7 @@ function App() {
   // ScoreBoard component to display user scores
 
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=10&category=11&difficulty=easy")
+    fetch("https://opentdb.com/api.php?amount=10&category=31&difficulty=medium")
       .then((response) => response.json())
       .then((data) => {
         const formattedQuestions = data.results.map((question) => {
