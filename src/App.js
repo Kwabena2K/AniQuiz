@@ -3,6 +3,7 @@ import he from "he";
 import "./App.css";
 import QuestionsCard from "./components/QuestionsCard";
 import ResultsCard from "./components/ResultsCard";
+import Footer from "./components/Footer";
 
 function App() {
   // Properties
@@ -109,6 +110,7 @@ function App() {
           optionClicked={optionClicked}
         />
       )}
+      <Footer />
     </div>
   );
 }

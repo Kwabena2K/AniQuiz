@@ -148,3 +148,37 @@ form {
 .userName {
   margin-bottom: 1rem;
 }
+
+/* Footer */
+
+.container {
+  text-align: center;
+}
+
+.container p {
+  color: white;
+}
+
+.container a {
+  color: white;
+  margin: 0.5rem;
+  font-size: 1.875rem;
+}
+.container .description {
+  font-size: 0.875rem;
+}
+
+.container .owner a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  margin: 0;
+  padding: 0;
+}
+
+.container a:hover {
+  color: #0066ff;
+}
+
+.container .owner a:hover {
+  color: #0066ff;
+}
