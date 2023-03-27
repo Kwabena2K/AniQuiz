@@ -1,9 +1,10 @@
 import React from "react";
 
-function QuestionsCard({ currentQuestion, questions, optionClicked }) {
+function QuestionsCard({ score, currentQuestion, questions, optionClicked }) {
   return (
     <div className="question-card">
       {/* Current Question  */}
+
       <h2 className="current-question">
         Question: {currentQuestion + 1} out of {questions.length}
       </h2>
