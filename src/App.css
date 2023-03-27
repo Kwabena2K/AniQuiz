@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: #22577a;
   background-image: url("../images/scatter-bg.png");
   background-position: center;
   background-repeat: no-repeat;
@@ -72,7 +71,6 @@ h1 {
 }
 
 .difficulty {
-  /* border: 2px solid red; */
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   color: rgb(0, 102, 255);
@@ -140,7 +138,6 @@ form {
 
 .userName,
 .submit {
-  /* border: 2px solid red; */
   display: flex;
   margin: 0 auto;
   padding: 1rem;
@@ -183,4 +180,15 @@ form {
 
 .container .owner a:hover {
   color: #0066ff;
+}
+
+/* media query */
+
+@media only screen and (max-width: 600px) {
+  ul {
+    padding: 0;
+  }
+  .question-card {
+    width: 90%;
+  }
 }
