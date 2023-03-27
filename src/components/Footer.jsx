@@ -19,8 +19,7 @@ function Footer() {
       </p>
       <p className="owner">
         {/* calendar function to update to the current year */}
-        &copy; {new Date().getFullYear()} Designed by
-        <a href="https://kwabenaosei.com/"> Kwabena Osei</a>
+        &copy; {new Date().getFullYear()} Designed by <a href="https://kwabenaosei.com/"> Kwabena Osei</a>
       </p>
       <p className="description">Created with React, HTML and CSS</p>
     </div>
