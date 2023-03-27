@@ -9,7 +9,7 @@ function ResultsCard({ score, questions, restartGame }) {
         {score} out of {questions.length} correct - (
         {(score / questions.length) * 100}%)
       </h3>
-      <button onClick={() => restartGame()}>Restart game</button>
+      <button onClick={() => restartGame()}>Restart game </button>
 
       <ScoreBoard score={score} />
     </div>

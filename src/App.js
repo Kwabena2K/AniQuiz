@@ -11,10 +11,9 @@ function App() {
   const [score, setScore] = useState(0);
   const [questions, setQuestions] = useState([]);
   const [difficulty, setDifficulty] = useState("easy"); // default difficulty
-  // ScoreBoard component to display user scores
 
   useEffect(() => {
-    fetch("https://opentdb.com/api.php?amount=10&category=31&difficulty=medium")
+    fetch("https://opentdb.com/api.php?amount=10&category=31&difficulty=easy")
       .then((response) => response.json())
       .then((data) => {
         const formattedQuestions = data.results.map((question) => {
@@ -74,7 +73,7 @@ function App() {
   return (
     <div className="App">
       {/* Page title  */}
-      <h1 className="title">Welcome to AniQuiz</h1>
+      <h1 className="title">Welcome to AniQuiz &#127918;</h1>
 
       {/*  Real time score */}
       <h1 className="score">
@@ -83,7 +82,7 @@ function App() {
 
       {/* Difficulty selector */}
       <div className="difficulty">
-        <label htmlFor="difficulty">Select difficulty level:</label>
+        <label htmlFor="difficulty">Select a difficulty level:</label>
         <select
           id="difficulty"
           name="difficulty"
