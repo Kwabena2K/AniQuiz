@@ -95,6 +95,7 @@ function App() {
           <option value="hard">Hard</option>
         </select>
       </div>
+
       {showResults ? (
         /* Display results to user */
         <ResultsCard

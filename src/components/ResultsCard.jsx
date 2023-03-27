@@ -1,7 +1,7 @@
 import React from "react";
 import ScoreBoard from "./ScoreBoard";
 
-function ResultsCard({ score, questions, restartGame }) {
+function ResultsCard({ score, questions, restartGame, handleScoreSubmit }) {
   return (
     <div className="final-results">
       <h1>Final Results</h1>
@@ -11,7 +11,7 @@ function ResultsCard({ score, questions, restartGame }) {
       </h3>
       <button onClick={() => restartGame()}>Restart game </button>
 
-      <ScoreBoard score={score} />
+      <ScoreBoard score={score} onScoreSubmit={handleScoreSubmit} />
     </div>
   );
 }
