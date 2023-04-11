@@ -19,11 +19,9 @@ I used this tech stack as I found it necessary to complete the logic and functio
 
 My motivation for this project consists of being an avid watcher and reader of anime and manga so naturally I found it very engaging to be involved in the process of creating and deploying an application where I had a lot of desire to complete the project to the best of my ability.
 
-# Created with:
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Running the project
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 In the project directory, you can run:
 
